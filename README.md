@@ -1,6 +1,24 @@
-# Inventra - AI-Powered Inventory & Financial Management System
+# Intelligent Financial & Inventory Management System with LangGraph and LangSmith
 
-**An intelligent multi-agent system for inventory management, financial analysis, and business decision-making using LangGraph, Gemini AI, and weather forecasting.**
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/LangGraph-Agent%20Workflow-green?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/LangSmith-Tracing-orange?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Google-Gemini%20AI-red?style=for-the-badge&logo=google"/>
+
+<img src="https://img.shields.io/badge/FastAPI-Framework-009688?style=for-the-badge&logo=fastapi"/>
+
+<img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit"/>
+
+<img src="https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite"/>
+
+</p>
+
+**An enterprise-grade AI-powered Financial and Inventory Management System built using LangGraph, LangSmith, Google Gemini AI, FastAPI, Streamlit, and SQLite. The system leverages multiple AI agents for financial analysis, inventory optimization, weather-aware forecasting, vendor ticket generation, and intelligent business decision support.**
 
 ---
 
@@ -129,8 +147,7 @@
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/programteam-cn/GenAI-Live-Course-Project-5-Intelligent-Financial-and-Inventory-Management.git
-cd GenAI-Live-Course-Project-5-Intelligent-Financial-and-Inventory-Management
+git clone https://github.com/Manojnuka/Intelligent-Financial-and-Inventory-Management-With-Tracing.git
 ```
 
 ### Step 2: Create Virtual Environment
@@ -260,47 +277,77 @@ Shows:
 
 ---
 
-## Project Structure
 
-```
-inventra/
-├── agents/                    # AI Agents (LLM-powered)
-│   ├── coordinator.py         # LangGraph orchestrator
-│   ├── decision_agent.py      # Business decision making
-│   └── report_agent.py        # Data aggregation & reports
+## 📂 Project Structure
+
+```text
+Intelligent-Financial-and-Inventory-Management_With_Tracing/
 │
-├── services/                  # Business Logic & Workflows
-│   ├── data_pipeline.py       # Data aggregation
-│   ├── forecast_updater.py    # Weather-based forecasting
-│   └── ticket_manager.py      # Ticket lifecycle management
+├── agents/
+│   ├── __init__.py
+│   ├── coordinator.py
+│   ├── decision_agent.py
+│   └── report_agent.py
 │
-├── tools/                     # Utility Functions
-│   ├── finance.py             # Financial calculations
-│   ├── weather.py             # Weather API integration
-│   └── export.py              # Data export utilities
+├── config/
+│   ├── __init__.py
+│   ├── langsmith_setup.py
+│   ├── logger.py
+│   └── settings.py
 │
-├── database/                  # Data Persistence Layer
-│   ├── db_manager.py          # SQLite operations
-│   ├── memory_manager.py      # Conversation history
-│   ├── seed_db.py             # Database initialization
-│   ├── inventra.db            # SQLite database
-│   ├── schema.sql             # Database schema
-│   └── data/                  # CSV seed files
+├── database/
+│   ├── data/
+│   │   ├── finance.csv
+│   │   ├── inventory.csv
+│   │   ├── sales.csv
+│   │   └── vendors.csv
+│   ├── __init__.py
+│   ├── db_manager.py
+│   ├── inventra.db
+│   ├── memory_manager.py
+│   ├── schema.sql
+│   ├── seed_db.py
+│   └── data.zip
 │
-├── integrations/              # External Integrations
-│   └── mcp_tools.py           # MCP protocol tools
+├── db/
+│   └── inventra.db
 │
-├── config/                    # Configuration
-│   ├── settings.py            # Environment settings
-│   └── logger.py              # Logging configuration
+├── integrations/
+│   ├── __init__.py
+│   ├── mcp_server.py
+│   └── README_MCP.md
 │
-├── ui/                        # User Interface
-│   └── streamlit_app.py       # Streamlit web app
+├── routes/
+│   └── assistant.py
 │
-├── main.py                    # Application entry point
-├── requirements.txt           # Python dependencies
-├── .env.example               # Environment template
-└── README.md                  # This file
+├── services/
+│   ├── __init__.py
+│   ├── data_pipeline.py
+│   ├── forecast_updater.py
+│   └── ticket_manager.py
+│
+├── tools/
+│   ├── export.py
+│   ├── finance.py
+│   └── weather.py
+│
+├── ui/
+│   ├── __init__.py
+│   └── streamlit_app.py
+│
+├── .gitignore
+├── README.md
+├── LANGSMITH_CHANGES_SUMMARY.md
+├── LANGSMITH_IMPLEMENTATION.md
+├── LANGSMITH_SETUP.md
+├── SETUP_GUIDE.md
+├── api_main.py
+├── main.py
+├── prompts
+├── pyproject.toml
+├── requirements.txt
+├── test_langsmith.py
+└── uv.lock
 ```
 
 ---
@@ -459,8 +506,12 @@ This project is created for educational purposes as part of the GenAI Live Cours
 
 ## Authors
 
-- **GenAI Live Course Team**
-- **Enhanced with Claude Code**
+Manoj Kumar Nukathoti
+
+MBA | Investment Banking Professional | AI & Generative AI Enthusiast
+
+GitHub:
+https://github.com/Manojnuka
 
 ---
 
