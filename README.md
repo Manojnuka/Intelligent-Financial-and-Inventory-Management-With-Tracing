@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Intelligent Financial &.png" alt="Intelligent Financial & Inventory Management System" width="100%">
+</p>
+
 # Intelligent Financial & Inventory Management System with LangGraph and LangSmith
 
 <p align="center">
